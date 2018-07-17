@@ -90,7 +90,7 @@ $(function() {
         })
 
         it('update the content', function () {
-            expect(oldFirstFeed == newFirstFeed).toBe(false); // If they are different the content has been updated
+            expect(oldFirstFeed).not.toEqual(newFirstFeed); // If they are different the content has been updated
         })
 
     })
